@@ -1,0 +1,15 @@
+{
+	"id": "AnteUp",
+	"name": "Ante Up",
+	"display_name": "Ante Up",
+	"author": ["wewaeae"],
+	"description": "wip",
+	"prefix": "anp",
+	"main_file": "main.lua",
+	"priority": 0,
+	"version": "1.0.0",
+	"dependencies": ["Steamodded (>=1.0.0~ALPHA-0309c)"],
+	"badge_colour": "7E7AFF",
+	"badge_text_colour": "40093A"
+
+}
