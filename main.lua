@@ -1,5 +1,6 @@
 SMODS.load_file("objects/jokers.lua")()
 SMODS.load_file("objects/seals.lua")()
+SMODS.load_file("objects/enhancements.lua")()
 
 SMODS.Atlas{
     key = "Jokers",
@@ -8,10 +9,19 @@ SMODS.Atlas{
     py = 95
 }
 
+SMODS.Atlas{
+    key = "enh",
+    path = "enh.png",
+    px = 71,
+    py = 95
+}
+
 local igo = Game.init_game_object
 Game.init_game_object = function(self)
 	local ret = igo(self)
 	ret.playsuit = "Spades"
+    ret.glassodds = 4
+    ret.glassxmult = 2
 	return ret
 end
 
