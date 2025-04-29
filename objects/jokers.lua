@@ -16,7 +16,7 @@ SMODS.Joker({
 	calculate = function(self, card, context)
 		local atp = card.ability.extra
 		local hearts = 0
-		if context.end_of_round then
+		if context.end_of_round and context.main_eval then
 			local redh_suits = 0
 			for k, v in ipairs(G.hand.cards) do
 				if v:is_suit("Hearts", nil, true) then
